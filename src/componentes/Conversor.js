@@ -7,10 +7,13 @@ export default class Conversor extends Component {
         moedaA_valor: "",
         moedaB_valor: 0,
     };
+
+    this.converter = this.converter.bind(this);
   }
 
   converter(){
-    console.log('convertido');
+    let de_para = `${this.props.moedaA}_${this.props.moedaB}`;
+    let url
   }
 
   render() {
