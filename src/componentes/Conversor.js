@@ -10,7 +10,7 @@ export default class Conversor extends Component {
   }
 
   converter(){
-
+    console.log('convertido');
   }
 
   render() {
@@ -18,7 +18,7 @@ export default class Conversor extends Component {
       <div className='conversor'>
         <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
         <input type="text" onChange={(event)=>{this.setStage({moedaA_valor: event.target.value})}}></input>
-        <input type="button" value="Converter" oncClick={this.converter}></input>
+        <input type="button" value="Converter" onClick={this.converter}></input>
         <h2>Valor convertido</h2>
       </div>
     );
